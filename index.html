@@ -4,78 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historical Places in India</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Header */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+}
+
+#header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#header nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Section Styles */
+.section {
+    padding: 40px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.place {
+    margin-bottom: 20px;
+}
+
+.place img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.place p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Footer */
+#footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    width: 40px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+#footer p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+    </style>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header>
-        <h1 id="site-title">Historical Places in India</h1>
+    <!-- Header -->
+    <header id="header">
+        <h1>Historical Places in India</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#places">Places</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#places">Famous Places</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <div id="home" class="hero">
-        <h2>Explore the Rich History of India</h2>
-    </div>
-
     <!-- About Section -->
-    <div id="about" class="content-box">
+    <section id="about" class="section">
         <h2>About Us</h2>
-        <p>Discover the beauty of India's historical monuments. <a href="https://support.google.com" target="_blank">Learn More</a></p>
-    </div>
+        <p>Welcome to our website! Here you will find information about the most historic and beautiful places in India, each with rich cultural heritage.</p>
+        <p>For more information, visit <a href="https://www.google.com" target="_blank">Google Help</a>.</p>
+    </section>
 
-    <!-- Historical Places Section -->
-    <div id="places" class="content-box">
+    <!-- Famous Historical Places Section -->
+    <section id="places" class="section">
         <h2>Famous Historical Places</h2>
-        
         <div class="place">
             <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank">
-                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSFsIeC_3Y2cGKtv_qNitXLOqLtpUgvLSbFQY29Jab9PVco7S9TrjYb2cCKg2KizyBqPsdk83i9aflNGDe83hnAZ0Y3-l8ORjrAtJVzQw" alt="Taj Mahal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Taj_Mahal_in_Daylight.jpg/1024px-Taj_Mahal_in_Daylight.jpg" alt="Taj Mahal" class="place-img">
             </a>
-            <h3>Taj Mahal</h3>
-            <p>A symbol of love built by Shah Jahan in Agra.</p>
+            <p><strong>Taj Mahal</strong>: The Taj Mahal, a UNESCO World Heritage Site, is one of the most famous monuments in India, located in Agra, known for its stunning white marble architecture.</p>
         </div>
-
         <div class="place">
             <a href="https://en.wikipedia.org/wiki/Qutub_Minar" target="_blank">
-                <img src="qutub_minar.jpg" alt="Qutub Minar">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Qutub_Minar_1.jpg/1024px-Qutub_Minar_1.jpg" alt="Qutub Minar" class="place-img">
             </a>
-            <h3>Qutub Minar</h3>
-            <p>The tallest brick minaret in the world, located in Delhi.</p>
+            <p><strong>Qutub Minar</strong>: Qutub Minar is a 73-meter-high tower located in Delhi, renowned for its Indo-Islamic Afghan architecture.</p>
         </div>
+    </section>
 
-        <div class="place">
-            <a href="https://en.wikipedia.org/wiki/Red_Fort" target="_blank">
-                <img src="red_fort.jpg" alt="Red Fort">
-            </a>
-            <h3>Red Fort</h3>
-            <p>A UNESCO World Heritage Site and a symbol of India’s history.</p>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <div id="contact" class="content-box">
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <p>For any queries, visit our <a href="https://support.google.com" target="_blank">Help Center</a>.</p>
-    </div>
+        <p>If you have any queries or need further information, feel free to reach out to us.</p>
+        <p>Visit <a href="https://www.google.com" target="_blank">Google Help</a> for assistance.</p>
+    </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Historical Places in India | All Rights Reserved</p>
+    <!-- Footer -->
+    <footer id="footer">
         <div class="social-icons">
-            <a href="https://facebook.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-            <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-            <a href="https://youtube.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube" class="social-icon">
+            </a>
         </div>
+        <p>&copy; 2025 Historical Places in India. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
